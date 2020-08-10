@@ -1,15 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D68A84FF-6FCD-43F0-8BE4-95E80B08C98A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitHubActions.Teams.ConsoleApp", "src\GitHubActions.Teams.ConsoleApp\GitHubActions.Teams.ConsoleApp.csproj", "{AD57866E-EA88-459F-A0D9-536674AF120E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubActions.Teams.ConsoleApp", "src\GitHubActions.Teams.ConsoleApp\GitHubActions.Teams.ConsoleApp.csproj", "{AD57866E-EA88-459F-A0D9-536674AF120E}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{5C96E025-B004-4BF7-9FC7-3FD2D99BB1CD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubActions.Teams.ConsoleApp.Tests", "test\GitHubActions.Teams.ConsoleApp.Tests\GitHubActions.Teams.ConsoleApp.Tests.csproj", "{CA78525C-AE74-4562-BC44-201722B8DF05}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CC1FD044-CF4E-4743-A36B-4CEEFE373950}"
+	ProjectSection(SolutionItems) = preProject
+		action.yml = action.yml
+		Dockerfile = Dockerfile
+		entrypoint.sh = entrypoint.sh
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +22,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{AD57866E-EA88-459F-A0D9-536674AF120E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -37,7 +37,10 @@ Global
 		{AD57866E-EA88-459F-A0D9-536674AF120E}.Release|x86.ActiveCfg = Release|Any CPU
 		{AD57866E-EA88-459F-A0D9-536674AF120E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{AD57866E-EA88-459F-A0D9-536674AF120E} = {D68A84FF-6FCD-43F0-8BE4-95E80B08C98A}
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {650F2495-299D-43AD-92FF-465ECBD4C898}
 	EndGlobalSection
 EndGlobal
